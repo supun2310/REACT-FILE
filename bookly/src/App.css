@@ -1,0 +1,25 @@
+/* Remove Bootstrap-breaking styles */
+#root {
+  /* Remove padding and text-align, keep only width */
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Remove default .card padding override */
+.card {
+  /* Bootstrap handles card padding */
+  padding: 0;
+}
+
+/* Keep your custom hover effect */
+.book-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.15);
+}
+.book-card .card-body {
+  text-align: left;
+}
